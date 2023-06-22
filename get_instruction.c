@@ -32,7 +32,7 @@ instruction_t *get_instruction(char *opcode)
 {
 	int index = 0;
 
-	instruction_t *instructions = malloc(sizeof(instruction_t) * 5);
+	instruction_t *instructions = malloc(sizeof(instruction_t) * 6);
 
 	if (!instructions)
 		return (NULL);
@@ -45,8 +45,10 @@ instruction_t *get_instruction(char *opcode)
 	instructions[2].f = pint;
 	instructions[3].opcode = "pop";
 	instructions[3].f = pop;
-	instructions[4].opcode = NULL;
-	instructions[4].f = NULL;
+	instructions[4].opcode = "swap";
+	instructions[4].f = swap;
+	instructions[5].opcode = NULL;
+	instructions[5].f = NULL;
 
 	while (instructions[index].opcode)
 	{
