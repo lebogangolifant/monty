@@ -6,8 +6,7 @@
  * strdup - Duplicates a string by allocating memory and copying the string.
  * @str: The string to duplicate.
  *
- * Return: A pointer to a newly allocated string that is a duplicate of the
- * provided string.
+ * Return: Pointer to a newly allocated string.
  */
 
 char *strdup(const char *str)
