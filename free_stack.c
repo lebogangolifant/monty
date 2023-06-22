@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * free_stack - Frees all nodes in a stack and sets the stack pointer to NULL.
+ * free_stack - Frees all nodes in a stack.
  * @stack: A double pointer to the stack's head.
  */
 
