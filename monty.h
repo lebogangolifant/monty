@@ -40,7 +40,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-/* Opcode Functions prototypes */
+/* Instruction Functions prototypes */
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
@@ -50,10 +50,12 @@ void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 
-/* Monty Bytecode Interpreter Functions prototypes */
+/* Utility Functions prototypes */
 instruction_t *get_instruction(char *opcode);
 void free_stack(stack_t **stack);
 char *strdup(const char *str);
+
+/* Monty Bytecode Interpreter Functions prototypes */
 void process_file(FILE *file);
 
 #endif /* MONTY_H */
